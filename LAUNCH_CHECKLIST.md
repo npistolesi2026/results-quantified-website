@@ -15,14 +15,14 @@
 ## Remaining follow-up
 - [x] Apply black and medium-green brand colors to the website, favicon, and social graphic.
 - [x] Add Apple's missing secondary MX and SPF records while preserving existing Apple verification and DKIM records.
-- [ ] Create or verify nick@resultsquantified.com and hello@resultsquantified.com in Nicholas's iCloud account. No delivery test has been performed.
+- [ ] Create or verify nick@resultsquantified.com and hello@resultsquantified.com in Nicholas's iCloud account. Apple sign-in was not completed. No delivery test has been performed.
 - [ ] Repair Cloudflare's Git installation if automatic publishing from GitHub is desired. Current hosting uses direct deployment; a GitHub push alone does not publish.
 - [ ] Confirm the legal business name and review the supplied Terms and Privacy copy.
 - [ ] Additional mobile Safari, Android, and browser accessibility testing.
 - [ ] Submit sitemap to Google Search Console if desired.
 
 ## Publication record
-- Cloudflare deployment: 31aeb30f-5615-4a2b-859d-af4cd4963822
-- Published source commit: f3ba50a21c2853b2f4067d993c711cf0c905b58b
+- Cloudflare deployment: d42e5ed0-abfb-4d35-bb39-d3fcf3a35138
+- Published source commit: 6fafb1ef23c8306f7d34879e49faf9c96b3374b7
 - Production domain: https://resultsquantified.com/
 - Pages origin: https://results-quantified.pages.dev/

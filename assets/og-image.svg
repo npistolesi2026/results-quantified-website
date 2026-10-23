@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0b0b0b"/>
+  <rect x="1144" width="56" height="630" fill="#2fa34f"/>
+  <path d="M0 560H1144M1030 0V630" stroke="#273227" stroke-width="1"/>
+  <g transform="translate(68 48) scale(1.1)" fill="#2fa34f">
+    <path d="M14 44V20h13.4c6.8 0 11 3.4 11 9.2 0 4.2-2.3 7.1-6.1 8.4L41 44h-9.7L24 38.5h-1.9V44H14Zm8.3-12h4.5c2.2 0 3.5-.9 3.5-2.8s-1.2-2.8-3.5-2.8h-4.5V32Z"/>
+    <path d="M45 17h4v12h-4zM45 34h4v11h-4z"/>
+  </g>
+  <g font-family="DejaVu Sans, sans-serif">
+    <text x="145" y="91" fill="#fcfdfb" font-size="27" font-weight="700">Results Quantified</text>
+    <text x="80" y="183" fill="#aab3a8" font-size="17" letter-spacing="3">OPERATIONAL INTELLIGENCE. MEASURABLE IMPROVEMENT.</text>
+    <g font-size="68" font-weight="700" letter-spacing="-2">
+      <text x="76" y="282" fill="#fcfdfb">Find the leaks.</text>
+      <text x="76" y="365" fill="#fcfdfb">Quantify the value.</text>
+      <text x="76" y="448" fill="#2fa34f">Build the fix.</text>
+    </g>
+    <text x="80" y="523" fill="#aab3a8" font-size="21">Clearer decisions. Better systems. Results that hold.</text>
+    <text x="80" y="603" fill="#fcfdfb" font-size="18">resultsquantified.com</text>
+  </g>
+</svg>

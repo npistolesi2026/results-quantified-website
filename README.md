@@ -31,11 +31,17 @@ Deploy through Cloudflare's Pages deployments API using a multipart form with `_
 
 All website files remain editable in their original static format.
 
+## Brand colors
+
+The brand uses black `#0b0b0b` and medium green `#2fa34f`, with a darker green `#1c7032` for text on light backgrounds. Core text and button color pairs have at least 4.5:1 contrast.
+
+The favicon and social sharing graphic have editable SVG sources. To regenerate their PNG exports with Inkscape installed, run `bash scripts/build-brand.sh`, then rebuild the Worker. Asset links include a version query to refresh previously cached graphics.
+
 ## Contact
 
 The form prepares an email addressed to `hello@resultsquantified.com` in the visitor's mail application. It does not store submissions or send email itself.
 
-The domain already has iCloud Mail DNS records. These were preserved. Receiving mail at the specific `hello` address still needs verification in iCloud; domain-level MX records alone do not prove that mailbox exists.
+Email hosting uses iCloud Mail. The domain now has Apple's two MX records, its existing domain verification and DKIM records, and the required SPF record. The requested addresses are `nick@resultsquantified.com` and `hello@resultsquantified.com`, both intended for Nicholas's existing iCloud inbox. Creation and activation of those addresses still need verification inside the signed-in iCloud account; domain-level DNS alone does not prove either address exists.
 
 ## Verification
 

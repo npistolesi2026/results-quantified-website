@@ -13,7 +13,9 @@
 - [x] Server behavior checked for HEAD, cache revalidation, 404, unsupported methods, invalid paths, HTTPS and www redirects.
 
 ## Remaining follow-up
-- [ ] Verify hello@resultsquantified.com exists and receives messages through iCloud Mail. No test email was sent.
+- [x] Apply black and medium-green brand colors to the website, favicon, and social graphic.
+- [x] Add Apple's missing secondary MX and SPF records while preserving existing Apple verification and DKIM records.
+- [ ] Create or verify nick@resultsquantified.com and hello@resultsquantified.com in Nicholas's iCloud account. No delivery test has been performed.
 - [ ] Repair Cloudflare's Git installation if automatic publishing from GitHub is desired. Current hosting uses direct deployment; a GitHub push alone does not publish.
 - [ ] Confirm the legal business name and review the supplied Terms and Privacy copy.
 - [ ] Additional mobile Safari, Android, and browser accessibility testing.

@@ -3,9 +3,9 @@
   "short_name": "RQ",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#0a151b",
-  "theme_color": "#0a151b",
+  "background_color": "#0b0b0b",
+  "theme_color": "#0b0b0b",
   "icons": [
-    {"src": "/assets/apple-touch-icon.png", "sizes": "180x180", "type": "image/png"}
+    {"src": "/assets/apple-touch-icon.png?v=black-green", "sizes": "180x180", "type": "image/png"}
   ]
 }

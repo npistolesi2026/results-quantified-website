@@ -41,7 +41,7 @@ The favicon and social sharing graphic have editable SVG sources. To regenerate 
 
 The form prepares an email addressed to `hello@resultsquantified.com` in the visitor's mail application. It does not store submissions or send email itself.
 
-Email hosting uses iCloud Mail. The domain now has Apple's two MX records, its existing domain verification and DKIM records, and the required SPF record. The requested addresses are `nick@resultsquantified.com` and `hello@resultsquantified.com`, both intended for Nicholas's existing iCloud inbox. Creation and activation of those addresses still need verification inside the signed-in iCloud account; domain-level DNS alone does not prove either address exists.
+Email hosting uses iCloud Mail. The domain now has Apple's two MX records, its existing domain verification and DKIM records, and the required SPF record. Both `nick@resultsquantified.com` and `hello@resultsquantified.com` were created in Nicholas's existing iCloud Mail account and confirmed in the signed-in Custom Email Domain settings on October 23, 2026. The existing `npistolesi@resultsquantified.com` address remains in place. These addresses share the existing iCloud inbox. No end-to-end delivery test has been performed.
 
 ## Verification
 

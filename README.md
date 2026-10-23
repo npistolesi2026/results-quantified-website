@@ -1,38 +1,42 @@
 # Results Quantified website
 
-Static production-ready website for `resultsquantified.com`.
+Website source for https://resultsquantified.com.
 
-## Recommended launch path: Cloudflare Pages + GitHub
+## Hosting
 
-The domain is already parked at Cloudflare Registrar. For reliable version control and automatic deployments:
+- Cloudflare Pages project: `results-quantified`
+- Pages hostname: `results-quantified.pages.dev`
+- GitHub source: `npistolesi2026/results-quantified-website`, branch `main`
+- Deployment uses a self-contained Pages Worker generated from the static files.
+- The Worker serves the page, CSS, JavaScript, and image assets, applies security headers, and redirects `www` to the apex domain.
+- GitHub is the source backup. Pushes do not currently deploy automatically: Cloudflare rejected its Git installation connection during setup.
 
-1. Create a private or public GitHub repository named `results-quantified-website`.
-2. Upload this folder's contents to the repository root.
-3. In Cloudflare: **Workers & Pages → Create application → Pages → Connect to Git**.
-4. Select the repository.
-5. Framework preset: **None**.
-6. Build command: leave blank.
-7. Build output directory: `/`.
-8. Deploy.
-9. In the Pages project: **Custom domains → Set up a domain**.
-10. Add `resultsquantified.com`, then add `www.resultsquantified.com` and redirect `www` to the apex domain.
+## Edit and preview
 
-## Faster one-time launch: Direct Upload
+Edit the HTML, CSS, JavaScript, and `assets/` files in this repository. There are no runtime package dependencies.
 
-Zip this folder and use Cloudflare Pages' drag-and-drop Direct Upload. Cloudflare currently does not allow an existing Direct Upload project to switch to Git integration later; use Git integration from the start if ongoing edits will be frequent.
-
-## Before public launch
-
-- Configure `hello@resultsquantified.com` using Cloudflare Email Routing or another provider.
-- Confirm the legal name and business contact information in the Terms and Privacy pages.
-- Add a scheduling link later if desired.
-- Add Cloudflare Web Analytics only after deciding whether to use analytics.
-- Replace the mailto-based contact flow with a server-side form only when there is a defined storage/notification process.
-
-## Local preview
-
-```bash
+```sh
 python3 -m http.server 8080
 ```
 
-Then open `http://localhost:8080`.
+## Build and deploy
+
+```sh
+node scripts/build-worker.mjs
+```
+
+This writes `deployment/worker.mjs`. The generator embeds only the 12 public website files; documentation and build scripts are not served.
+
+Deploy through Cloudflare's Pages deployments API using a multipart form with `_worker.js` containing that generated module, `manifest` set to `{}`, `branch` set to `main`, and the matching Git commit hash. The Pages project remains `results-quantified`.
+
+All website files remain editable in their original static format.
+
+## Contact
+
+The form prepares an email addressed to `hello@resultsquantified.com` in the visitor's mail application. It does not store submissions or send email itself.
+
+The domain already has iCloud Mail DNS records. These were preserved. Receiving mail at the specific `hello` address still needs verification in iCloud; domain-level MX records alone do not prove that mailbox exists.
+
+## Verification
+
+Verified all 12 generated asset responses against the source bytes, 31 local links and anchors, security headers, cache revalidation, HEAD requests, custom 404 responses, method restrictions, HTTPS redirects, and the www redirect including paths and query strings.

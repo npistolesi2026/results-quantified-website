@@ -1,31 +1,26 @@
-# Launch checklist
+# Launch status — October 22, 2026
 
-## Hosting and domain
-- [ ] Create Cloudflare Pages project using Git integration (recommended) or Direct Upload.
-- [ ] Deploy successfully to the generated `*.pages.dev` address.
-- [ ] Add `resultsquantified.com` as the production custom domain.
-- [ ] Add `www.resultsquantified.com` and create a permanent redirect to the apex domain.
-- [ ] Verify HTTPS, redirects, and the 404 page.
+## Completed
+- [x] Website source saved in npistolesi2026/results-quantified-website.
+- [x] Cloudflare Pages project results-quantified created and deployed.
+- [x] https://resultsquantified.com/ opened successfully in a browser over HTTPS.
+- [x] www.resultsquantified.com redirects to the apex domain.
+- [x] Registrar parking page disabled and web DNS connected to Pages.
+- [x] Existing iCloud Mail DNS preserved.
+- [x] Desktop homepage inspected and FAQ interaction verified.
+- [x] All 12 generated asset responses byte-compared to source.
+- [x] 31 internal links and anchors checked across four HTML pages.
+- [x] Server behavior checked for HEAD, cache revalidation, 404, unsupported methods, invalid paths, HTTPS and www redirects.
 
-## Email and contact
-- [ ] Configure `hello@resultsquantified.com` and forward it to Nicholas's chosen inbox.
-- [ ] Send and receive a test message before publishing the contact CTA.
-- [ ] Test the inquiry form on desktop and mobile.
+## Remaining follow-up
+- [ ] Verify hello@resultsquantified.com exists and receives messages through iCloud Mail. No test email was sent.
+- [ ] Repair Cloudflare's Git installation if automatic publishing from GitHub is desired. Current hosting uses direct deployment; a GitHub push alone does not publish.
+- [ ] Confirm the legal business name and review the supplied Terms and Privacy copy.
+- [ ] Additional mobile Safari, Android, and browser accessibility testing.
+- [ ] Submit sitemap to Google Search Console if desired.
 
-## Business review
-- [ ] Confirm service language and target-company description.
-- [ ] Confirm Nicholas Pistolesi founder biography.
-- [ ] Review Privacy and Terms starter copy; obtain counsel review when appropriate.
-- [ ] Decide whether to publish pricing or founding-client language.
-
-## Search and analytics
-- [ ] Submit the sitemap to Google Search Console after launch.
-- [ ] Add privacy-conscious analytics only after deciding what will be measured.
-- [ ] Test title, description, favicon, and social-sharing image.
-
-## Final QA
-- [ ] Desktop: Chrome, Safari, Edge.
-- [ ] Mobile: iPhone Safari and Android Chrome.
-- [ ] Keyboard navigation and visible focus states.
-- [ ] Verify all links and mailto behavior.
-- [ ] Run a performance/accessibility scan after the public URL is live.
+## Publication record
+- Cloudflare deployment: 31aeb30f-5615-4a2b-859d-af4cd4963822
+- Published source commit: f3ba50a21c2853b2f4067d993c711cf0c905b58b
+- Production domain: https://resultsquantified.com/
+- Pages origin: https://results-quantified.pages.dev/

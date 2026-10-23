@@ -1,4 +1,4 @@
-# Launch status — October 22, 2026
+# Launch status — October 23, 2026
 
 ## Completed
 - [x] Website source saved in npistolesi2026/results-quantified-website.
@@ -15,7 +15,8 @@
 ## Remaining follow-up
 - [x] Apply black and medium-green brand colors to the website, favicon, and social graphic.
 - [x] Add Apple's missing secondary MX and SPF records while preserving existing Apple verification and DKIM records.
-- [ ] Create or verify nick@resultsquantified.com and hello@resultsquantified.com in Nicholas's iCloud account. Apple sign-in was not completed. No delivery test has been performed.
+- [x] Create nick@resultsquantified.com and hello@resultsquantified.com in Nicholas's existing iCloud Mail account; both are confirmed in the signed-in domain settings. Existing npistolesi@ address preserved.
+- [ ] Complete an end-to-end email delivery test. No test email has been sent.
 - [ ] Repair Cloudflare's Git installation if automatic publishing from GitHub is desired. Current hosting uses direct deployment; a GitHub push alone does not publish.
 - [ ] Confirm the legal business name and review the supplied Terms and Privacy copy.
 - [ ] Additional mobile Safari, Android, and browser accessibility testing.
